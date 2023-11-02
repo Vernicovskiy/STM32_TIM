@@ -1,0 +1,5 @@
+D:/Nero/STM32_TIM/SysTick_Delay/CMSIS/inc/core_cm4.h:1816:22:__NVIC_SetPriority	2
+D:/Nero/STM32_TIM/SysTick_Delay/CMSIS/inc/core_cm4.h:2022:26:SysTick_Config	2
+../Src/main.c:7:13:SysTick_Handler	2
+../Src/main.c:12:13:delay_ms	2
+../Src/main.c:20:10:main	1
