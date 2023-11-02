@@ -11,7 +11,6 @@
 
        void delay_ms(int ms)
     	{
-    		SysTick->LOAD = 16000-1;
     		SysTick_Count = ms;
     		while (SysTick_Count){}
     	}
