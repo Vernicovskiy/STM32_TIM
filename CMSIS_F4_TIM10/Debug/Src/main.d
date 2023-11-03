@@ -1,0 +1,18 @@
+Src/main.o: ../Src/main.c ../Inc/main.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/stm32f4xx.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/stm32f401xe.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/core_cm4.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_version.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_compiler.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_gcc.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/mpu_armv7.h \
+ D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/system_stm32f4xx.h
+../Inc/main.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/stm32f4xx.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/stm32f401xe.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/core_cm4.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_version.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_compiler.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/cmsis_gcc.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/mpu_armv7.h:
+D:/WORK/WORKSPACE\ for\ CUBE\ IDE\ 1.13.2/CMSIS_F4_TIM10/CMSIS/inc/system_stm32f4xx.h:
