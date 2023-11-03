@@ -368,31 +368,31 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
  80004dc:	2b01      	cmp	r3, #1
  80004de:	d14a      	bne.n	8000576 <HAL_TIM_IC_CaptureCallback+0xa6>
 	{
-		if (Is_First_Captured==0) // if the first rising edge is not captured
+		if (Is_First_Captured==0)
  80004e0:	4b27      	ldr	r3, [pc, #156]	; (8000580 <HAL_TIM_IC_CaptureCallback+0xb0>)
  80004e2:	681b      	ldr	r3, [r3, #0]
  80004e4:	2b00      	cmp	r3, #0
  80004e6:	d10a      	bne.n	80004fe <HAL_TIM_IC_CaptureCallback+0x2e>
 		{
-			IC_Val1 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1); // read the first value
+			IC_Val1 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
  80004e8:	2100      	movs	r1, #0
  80004ea:	6878      	ldr	r0, [r7, #4]
  80004ec:	f002 f85e 	bl	80025ac <HAL_TIM_ReadCapturedValue>
  80004f0:	4603      	mov	r3, r0
  80004f2:	4a24      	ldr	r2, [pc, #144]	; (8000584 <HAL_TIM_IC_CaptureCallback+0xb4>)
  80004f4:	6013      	str	r3, [r2, #0]
-			Is_First_Captured = 1;  // set the first captured as true
+			Is_First_Captured = 1;
  80004f6:	4b22      	ldr	r3, [pc, #136]	; (8000580 <HAL_TIM_IC_CaptureCallback+0xb0>)
  80004f8:	2201      	movs	r2, #1
  80004fa:	601a      	str	r2, [r3, #0]
 
-			__HAL_TIM_SET_COUNTER(htim, 0);  // reset the counter
-			Is_First_Captured = 0; // set it back to false
+			__HAL_TIM_SET_COUNTER(htim, 0);
+			Is_First_Captured = 0;
 		}
 	}
 }
  80004fc:	e03b      	b.n	8000576 <HAL_TIM_IC_CaptureCallback+0xa6>
-			IC_Val2 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);  // read second value
+			IC_Val2 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
  80004fe:	2100      	movs	r1, #0
  8000500:	6878      	ldr	r0, [r7, #4]
  8000502:	f002 f853 	bl	80025ac <HAL_TIM_ReadCapturedValue>
@@ -445,12 +445,12 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
  8000560:	ee17 2a90 	vmov	r2, s15
  8000564:	4b0b      	ldr	r3, [pc, #44]	; (8000594 <HAL_TIM_IC_CaptureCallback+0xc4>)
  8000566:	601a      	str	r2, [r3, #0]
-			__HAL_TIM_SET_COUNTER(htim, 0);  // reset the counter
+			__HAL_TIM_SET_COUNTER(htim, 0);
  8000568:	687b      	ldr	r3, [r7, #4]
  800056a:	681b      	ldr	r3, [r3, #0]
  800056c:	2200      	movs	r2, #0
  800056e:	625a      	str	r2, [r3, #36]	; 0x24
-			Is_First_Captured = 0; // set it back to false
+			Is_First_Captured = 0;
  8000570:	4b03      	ldr	r3, [pc, #12]	; (8000580 <HAL_TIM_IC_CaptureCallback+0xb0>)
  8000572:	2200      	movs	r2, #0
  8000574:	601a      	str	r2, [r3, #0]

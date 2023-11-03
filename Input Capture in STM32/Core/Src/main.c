@@ -77,15 +77,15 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 {
 	if (htim->Channel == HAL_TIM_ACTIVE_CHANNEL_1)
 	{
-		if (Is_First_Captured==0) // if the first rising edge is not captured
+		if (Is_First_Captured==0)
 		{
-			IC_Val1 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1); // read the first value
-			Is_First_Captured = 1;  // set the first captured as true
+			IC_Val1 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
+			Is_First_Captured = 1;
 		}
 
-		else   // If the first rising edge is captured, now we will capture the second edge
+		else
 		{
-			IC_Val2 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);  // read second value
+			IC_Val2 = HAL_TIM_ReadCapturedValue(htim, TIM_CHANNEL_1);
 			if (IC_Val2 > IC_Val1)
 			{
 				Difference = IC_Val2-IC_Val1;
@@ -100,8 +100,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim)
 
 			frequency = refClock/Difference;
 
-			__HAL_TIM_SET_COUNTER(htim, 0);  // reset the counter
-			Is_First_Captured = 0; // set it back to false
+			__HAL_TIM_SET_COUNTER(htim, 0);
+			Is_First_Captured = 0;
 		}
 	}
 }
